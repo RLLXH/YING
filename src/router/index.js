@@ -4,6 +4,7 @@ import Index from '../components/index.vue'
 import Grad from '../pageDetail/grad.vue'
 import DataBase from '../pageDetail/database.vue'
 import Loading from '../pageDetail/loading.vue'
+import RankingList from '../pageDetail/rankingList.vue'
 // import Index from '@/components/Index'
 
 Vue.use(Router)
@@ -29,6 +30,10 @@ export default new Router({
         path:'Loading',
         name:'登陆',
         component:Loading
+      },{
+        path:'RankingList',
+        name:'排行榜',
+        component:RankingList
       }
 
       ]

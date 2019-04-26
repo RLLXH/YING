@@ -37,7 +37,7 @@ html {
     text-align: center;
   } //表头背景颜色
   .el-table td {
-    text-align: center;
+    // text-align: center;
     // background-color:	#F0FFFF;
   } //表格内容
   //侧栏样式

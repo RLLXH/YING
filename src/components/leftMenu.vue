@@ -5,7 +5,7 @@
       <el-menu-item index="/Index/grad">首页</el-menu-item>
       <el-menu-item index="/Index/DataBase">数据库</el-menu-item>
       
-      <el-menu-item index="3">排行榜</el-menu-item>
+      <el-menu-item index="/Index/RankingList">排行榜</el-menu-item>
       <el-menu-item index="3">英雄榜</el-menu-item>
       <el-menu-item index="3">社区</el-menu-item>
       <el-menu-item index="3">直播</el-menu-item>
