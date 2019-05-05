@@ -52,6 +52,7 @@ export default {
   }
   .el-main{
     padding: 0px 0px;
+    height: 100%;
   }
   .el-footer{
     padding: 0px 0px;

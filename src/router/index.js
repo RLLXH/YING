@@ -6,6 +6,7 @@ import DataBase from '../pageDetail/database.vue'
 import Loading from '../pageDetail/loading.vue'
 import RankingList from '../pageDetail/rankingList.vue'
 import HeroseList from '../pageDetail/heroesList.vue'
+import Registered from '../pageDetail/registered.vue'
 // import Index from '@/components/Index'
 
 Vue.use(Router)
@@ -39,6 +40,10 @@ export default new Router({
         path:'HeroseList',
         name:'英雄榜',
         component:HeroseList
+      },{
+        path:'Registered',
+        name:'登陆',
+        component:Registered
       }
 
       ]

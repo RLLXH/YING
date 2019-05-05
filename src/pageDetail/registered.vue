@@ -4,6 +4,7 @@
     <el-form
       label-position="0"
       label-width="110px"
+     
       :model="user"
       :rules="rules"
       ref="user"
@@ -17,11 +18,12 @@
       <el-form-item label>
         <el-input v-model="user.password" type="password" placeholder="密码"></el-input>
       </el-form-item>
+     
       <el-form-item label>
-        <el-button @click="loadBtn('user')">登陆</el-button>
+        <el-button @click="loadBtn('registered')">注册</el-button>
       </el-form-item>
-      <el-form-item label>
-        <el-button @click="registered">没有账号？立即注册</el-button>
+       <el-form-item label>
+        <el-button @click="loadBtn('user')">返回登陆</el-button>
       </el-form-item>
     </el-form>
   </div>
@@ -47,28 +49,12 @@ export default {
     };
   },
   methods: {
-    registered() {
-      this.$router.push("/Index/Registered");
-    },
+  
     handleClick() {
       (this.user.password = ""), (this.user.userName = "");
     },
     loadBtn(formName) {
-      this.$refs[formName].validate(valid => {
-        if (valid) {
-          let data = {
-            password: this.user.password,
-            userName: this.user.userName
-          };
-          // axios
-          //   .post(login + "?type=" + (this.activeName - 0), data)
-          //   .then(data => {
-          //     console.log("登陆成功");
-          //     this.$router.push("/Index/staffManagement");
-          //     this.setloadingData(true);
-          //   });
-        }
-      });
+        this.$router.push('/Index/Loading')
     }
   }
 };
@@ -87,7 +73,7 @@ export default {
   height: 100%;
   margin: auto;
   // margin-top: 19z0px;
- padding-top: 5em;
+  padding-top: 5em;
   text-align: center;
   img {
     width: 15%;
