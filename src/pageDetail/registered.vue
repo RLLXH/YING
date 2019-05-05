@@ -4,7 +4,6 @@
     <el-form
       label-position="0"
       label-width="110px"
-     
       :model="user"
       :rules="rules"
       ref="user"
@@ -12,26 +11,26 @@
       <el-form-item label>
         <img src="../assets/logo-white.png">
       </el-form-item>
-      <el-form-item label>
+      <el-form-item label prop="userName">
         <el-input v-model="user.userName" placeholder="用户名"></el-input>
       </el-form-item>
-      <el-form-item label>
+      <el-form-item label prop="password">
         <el-input v-model="user.password" type="password" placeholder="密码"></el-input>
       </el-form-item>
      
       <el-form-item label>
-        <el-button @click="loadBtn('registered')">注册</el-button>
+        <el-button @click="registeredBtn('user')">注册</el-button>
       </el-form-item>
        <el-form-item label>
-        <el-button @click="loadBtn('user')">返回登陆</el-button>
+        <el-button @click="loadBtn()">返回登陆</el-button>
       </el-form-item>
     </el-form>
   </div>
   </div>
 </template>
 // <script>
-// import { login } from "../api/address.js";
-// import axios from "../api/axios.js";
+import { userRegister } from "../api/address.js";
+import axios from "../api/axios.js";
 // import { createNamespacedHelpers } from "vuex";
 // const { mapState, mapActions, mapmutations } = createNamespacedHelpers("loadingstore");
 export default {
@@ -43,13 +42,24 @@ export default {
         userName: ""
       },
       rules: {
-        password: [{ required: true, message: "请输入", trigger: "blur" }],
-        userName: [{ required: true, message: "请输入", trigger: "blur" }]
+        password: [{ required: true, message: " ", trigger: "blur" }],
+        userName: [{ required: true, message: " ", trigger: "blur" }]
       }
     };
   },
   methods: {
-  
+    //注册
+  registeredBtn(formName){
+     this.$refs[formName].validate(valid => {
+        if (valid) {
+          axios.post(userRegister+'?name='+this.user.userName+'&password='+this.user.password,).then(data=>{
+            this.$message.success('注册成功，跳转至登录页')
+            this.$router.push('/Index/Loading')
+          })
+        }else{
+          this.$message.warning('请输入注册用户名和密码')
+        }})
+  },
     handleClick() {
       (this.user.password = ""), (this.user.userName = "");
     },

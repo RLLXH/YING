@@ -1,7 +1,7 @@
 <template>
   <div class="all">
     
-    <el-menu  class="el-menu-demo" mode="horizontal" router>
+    <el-menu  class="el-menu-demo" mode="horizontal" router default-active>
       <el-menu-item index="/Index/grad">首页</el-menu-item>
       <el-menu-item index="/Index/DataBase">数据库</el-menu-item>
       <el-menu-item index="/Index/RankingList">排行榜</el-menu-item>
@@ -10,7 +10,8 @@
       <el-menu-item index="3">直播</el-menu-item> -->
       <el-menu-item @click="open('https://www.wanplus.com/app/')">APP</el-menu-item>
       <el-menu-item  @click="open('https://www.wanplus.com/report/')">咨询</el-menu-item>
-      <el-menu-item index="/Index/Loading">登陆</el-menu-item>
+      <el-menu-item index="/Index/Loading" v-if="!this.loading">登陆</el-menu-item>
+       <el-menu-item index="/Index/Loading" v-if="this.loading" @click="out">退出登陆</el-menu-item>
       <el-menu-item index="/Index/Registered">注册</el-menu-item>
     </el-menu>
   </div>
@@ -18,9 +19,19 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      loading:false
+    };
+  },
+  created(){
+    this.loading=localStorage.getItem('loading')
   },
   methods:{
+    out(){
+      localStorage.clear('loading');
+      this.loading=false;
+      vue.set();
+    },
     open(data){
       window.open(data)
     }
