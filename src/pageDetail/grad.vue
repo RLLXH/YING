@@ -28,21 +28,57 @@
           <el-row>
             <el-col>
               <template>
-                <el-tabs v-model="activeName"  class="colorBox">
+                <el-tabs v-model="activeName" class="colorBox">
                   <el-tab-pane label="全部" name="first">
-                    <div class="colorBox">
+                    <div class="colorBox" v-for="(item,index) in list1" :key="index">
                       <el-row>
                         <el-col :span="5">
-                          <img width="100px" height="100px" src="../assets/1.jpg">
+                          <img :src="item.img" width="100px" height="100px">
                         </el-col>
-                        <el-col :span="19">[OWL选手]达拉燃老板透露Effect去向：将留队作为主播</el-col>
+                        <el-col :span="19">{{item.title}}</el-col>
                       </el-row>
                     </div>
                   </el-tab-pane>
-                  <el-tab-pane label="比赛数据" name="second">配置管理</el-tab-pane>
-                  <el-tab-pane label="赛事信息" name="third">角色管理</el-tab-pane>
-                  <el-tab-pane label="战术攻略" name="fourth">定时任务补偿</el-tab-pane>
-                  <el-tab-pane label="人物特稿" name="five">任务特稿</el-tab-pane>
+                  <el-tab-pane label="比赛数据" name="second">
+                    <div class="colorBox" v-for="(item,index) in list2" :key="index">
+                      <el-row>
+                        <el-col :span="5">
+                          <img :src="item.img" width="100px" height="100px">
+                        </el-col>
+                        <el-col :span="19">{{item.title}}</el-col>
+                      </el-row>
+                    </div>
+                  </el-tab-pane>
+                  <el-tab-pane label="赛事信息" name="third">
+                    <div class="colorBox" v-for="(item,index) in list3" :key="index">
+                      <el-row>
+                        <el-col :span="5">
+                          <img :src="item.img" width="100px" height="100px">
+                        </el-col>
+                        <el-col :span="19">{{item.title}}</el-col>
+                      </el-row>
+                    </div>
+                  </el-tab-pane>
+                  <el-tab-pane label="战术攻略" name="fourth">
+                    <div class="colorBox" v-for="(item,index) in list4" :key="index">
+                      <el-row>
+                        <el-col :span="5">
+                          <img :src="item.img" width="100px" height="100px">
+                        </el-col>
+                        <el-col :span="19">{{item.title}}</el-col>
+                      </el-row>
+                    </div>
+                  </el-tab-pane>
+                  <el-tab-pane label="人物特稿" name="five">
+                    <div class="colorBox" v-for="(item,index) in list5" :key="index">
+                      <el-row>
+                        <el-col :span="5">
+                          <img :src="item.img" width="100px" height="100px">
+                        </el-col>
+                        <el-col :span="19">{{item.title}}</el-col>
+                      </el-row>
+                    </div>
+                  </el-tab-pane>
                 </el-tabs>
               </template>
             </el-col>
@@ -70,12 +106,18 @@
     </div>
   </div>
 </template>
-
 <script>
+import { firstShowFatherSelect } from "../api/address.js";
+import axios from "../api/axios";
 export default {
   data() {
     return {
       activeName: "first",
+      list1: [],
+      list2: [],
+      list3: [],
+      list4: [],
+      list5: [],
       dataList: [
         {
           title: "【卡尔】 卡尔最强王者  微服私访",
@@ -84,7 +126,21 @@ export default {
       ]
     };
   },
-  methods: {}
+  created() {
+    this.getlist();
+  },
+  methods: {
+    getlist() {
+      axios.post(firstShowFatherSelect).then(data => {
+        console.log(data);
+        this.list1 = data.data[0].firstShowList;
+        this.list2 = data.data[1].firstShowList;
+        this.list3 = data.data[2].firstShowList;
+        this.list4 = data.data[3].firstShowList;
+        this.list5 = data.data[4].firstShowList;
+      });
+    }
+  }
 };
 </script>
 <style lang="less" scoped>
@@ -115,7 +171,7 @@ export default {
 }
 
 .fitBox {
-  margin-top:10px;
+  margin-top: 10px;
   height: 40px;
   background-color: #ffffff;
   display: block;
@@ -124,7 +180,7 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  .el-row{
+  .el-row {
     margin-top: 0px;
   }
   a {
