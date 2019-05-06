@@ -193,7 +193,7 @@ export default {
       }
       ul li {
         display: inline;
-        margin-right: 2 4px;
+        margin-right: 30px;
       }
     }
   }

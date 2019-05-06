@@ -1,6 +1,24 @@
 <template>
   <div>
-    <div class="imgBox"></div>
+    <div class="imgBox">
+      <el-carousel>
+      <el-carousel-item>
+        <img src="../assets/lun1.png">
+      </el-carousel-item>
+       <el-carousel-item>
+        <img src="../assets/lun2.png">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../assets/lun3.png">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../assets/lun4.jpg">
+      </el-carousel-item>
+       <el-carousel-item>
+        <img src="../assets/lun5.jpg">
+      </el-carousel-item>
+    </el-carousel>
+    </div>
     <div class="mainBox">
       <el-row>
         <el-col :span="17">
@@ -147,7 +165,13 @@ export default {
 .imgBox {
   width: 100%;
   height: 300px;
-  background-color: green;
+  .el-carousel__item.is-animating{
+    text-align: center;
+  }
+  img{
+   margin: auto;
+  }
+  // background-color: green;
 }
 .mainBox {
   margin: auto;
