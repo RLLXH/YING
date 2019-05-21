@@ -61,8 +61,8 @@ export default {
             )
             .then(data => {
               this.$message.success("登陆成功");
-              localStorage.setItem("loading", true);
-              this.$router.push("/Index/grad");
+              localStorage.setItem("loading", this.user.userName);
+              window.history.go(0)
             });
         } else {
           this.$message.warning("请输入用户名和密码");

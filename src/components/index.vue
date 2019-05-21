@@ -1,8 +1,8 @@
 <template>
   <el-container class="visit">
     <el-container>
-      <el-header>
-        <left-menu class="left-menu"></left-menu>
+      <el-header style="box-shadow: 1px 1px 10px #a09c9c;background: #000;">
+        <left-menu class="left-menu" ></left-menu>
       </el-header>
       <el-main> 
           <router-view></router-view>

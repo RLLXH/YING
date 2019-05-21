@@ -6,6 +6,8 @@ import DataBase from '../pageDetail/database.vue'
 import Loading from '../pageDetail/loading.vue'
 import RankingList from '../pageDetail/rankingList.vue'
 import HeroseList from '../pageDetail/heroesList.vue'
+import App from '../pageDetail/App'
+import Ask from '../pageDetail/Ask.vue'
 import Registered from '../pageDetail/registered.vue'
 // import Index from '@/components/Index'
 
@@ -40,7 +42,17 @@ export default new Router({
         path:'HeroseList',
         name:'英雄榜',
         component:HeroseList
-      },{
+      },
+      {
+        path: 'App',
+        name: 'App',
+        component: App
+      },
+      {
+        path: 'Ask',
+        name: 'Ask',
+        component: Ask
+      }, {
         path:'Registered',
         name:'登陆',
         component:Registered

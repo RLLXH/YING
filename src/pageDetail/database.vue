@@ -1,7 +1,7 @@
 <template>
-  <div class="all">
+  <div class="all" style="margin:20px auto">
     <div class="headerBox">
-      <el-row>
+      <el-row style="margin-bottom:20px">
         <span>
           数据类型：
           <el-button type="text">战队数据</el-button>
@@ -11,7 +11,7 @@
       <el-row>
         <span>
           赛事：
-          <el-select v-model="event">
+          <el-select size="mini" v-model="event">
             <el-option v-for="item in list" :key="item.index" :label="item.name" :value="item.name"></el-option>
           </el-select>
         </span>

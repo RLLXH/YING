@@ -10,9 +10,7 @@
               <li>玩家电竞</li>
               <li>英雄联盟</li>
               <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
+
             </ul>
           </el-col>
           <el-col :span="4">
@@ -22,9 +20,7 @@
               <li>玩家电竞</li>
               <li>玩家电竞</li>
               <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
+
             </ul>
           </el-col>
           <el-col :span="4">
@@ -33,10 +29,7 @@
               <li>玩家电竞</li>
               <li>玩家电竞</li>
               <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
+  
             </ul>
           </el-col>
           <el-col :span="4">
@@ -45,10 +38,7 @@
               <li>玩家电竞</li>
               <li>玩家电竞</li>
               <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
+ 
             </ul>
           </el-col>
           <el-col :span="4">
@@ -57,20 +47,12 @@
               <li>玩家电竞</li>
               <li>玩家电竞</li>
               <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
+  
             </ul>
           </el-col>
           <el-col :span="4">
             <ul class="textBox">
               <li class="first">玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
-              <li>玩家电竞</li>
               <li>玩家电竞</li>
               <li>玩家电竞</li>
             </ul>

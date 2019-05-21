@@ -1,8 +1,8 @@
 <template>
-  <div class="all">
+  <div class="all" style="margin:20px auto">
     <el-row>
       <el-col :span="7" class="box">
-        <h2>战队排行</h2>
+        <h2 style="padding:20px">战队排行</h2>
         <el-table :data="list">
           <el-table-column
             v-for="(item,index) in tabHeade"
@@ -44,7 +44,7 @@
         </el-table>
       </el-col>
       <el-col :span="7" :offset="1" class="box">
-        <h2>选手排行</h2>
+        <h2 style="padding:20px">选手排行</h2>
         <el-table :data="list">
           <el-table-column
             v-for="(item,index) in tabHeade"

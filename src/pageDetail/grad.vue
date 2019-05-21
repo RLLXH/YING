@@ -1,54 +1,54 @@
 <template>
   <div>
-    <div class="imgBox">
+    <div class="imgBox" style="margin-top:10px">
       <el-carousel>
       <el-carousel-item>
-        <img src="../assets/lun1.png">
+        <img src="../assets/99197.jpg">
       </el-carousel-item>
        <el-carousel-item>
-        <img src="../assets/lun2.png">
+        <img src="../assets/101458.jpg">
       </el-carousel-item>
       <el-carousel-item>
-        <img src="../assets/lun3.png">
+        <img src="../assets/102657.jpg">
       </el-carousel-item>
       <el-carousel-item>
-        <img src="../assets/lun4.jpg">
+        <img src="../assets//101458.jpg">
       </el-carousel-item>
-       <el-carousel-item>
+       <!-- <el-carousel-item>
         <img src="../assets/lun5.jpg">
-      </el-carousel-item>
+      </el-carousel-item> -->
     </el-carousel>
     </div>
     <div class="mainBox">
       <el-row>
         <el-col :span="17">
-          <div class="colorBox">
-            <el-row>热门赛事</el-row>
-            <el-row>
-              <el-col :span="5">
+          <div class="colorBox" style="padding:20px">
+            <el-row style="margin:20px 0">热门赛事</el-row>
+            <el-row :gutter ="32">
+              <el-col :span="5" >
                 <img width="96%" src="../assets/pit.png" height="90px">
-                <span class="spanBox">DITA PIT MINOR1111111ffff</span>
+                <span class="spanBox">2019 MSI | 季赛冠军</span>
               </el-col>
               <el-col :span="5">
-                <img width="96%" src="../assets/pit.png" height="90px">
-                <span class="spanBox">DITA PIT MINORffffffff</span>
+                <img width="96%" src="../assets/761_mid.jpg" height="90px">
+                <span class="spanBox">NEST全国电子竞技大赛</span>
               </el-col>
               <el-col :span="5">
-                <img width="96%" src="../assets/pit.png" height="90px">
-                <span class="spanBox">DITA PIT MINORffffffff</span>
+                <img width="96%" src="../assets/762_mid.jpg" height="90px">
+                <span class="spanBox">2019LCK春季升降级赛</span>
               </el-col>
               <el-col :span="5">
-                <img width="96%" src="../assets/pit.png" height="90px">
-                <span class="spanBox">DITA PIT MINORfffffffff</span>
+                <img width="96%" src="../assets/811_mid.jpg" height="90px">
+                <span class="spanBox">2019 NA LCS Spring、北美职业联赛春季赛</span>
               </el-col>
             </el-row>
           </div>
           <el-row>
-            <el-col>
+            <el-col >
               <template>
-                <el-tabs v-model="activeName" class="colorBox">
+                <el-tabs style="padding:20px" v-model="activeName" class="colorBox">
                   <el-tab-pane label="全部" name="first">
-                    <div class="colorBox" v-for="(item,index) in list1" :key="index">
+                    <div class="colorBox" v-for="(item,index) in list1" :key="index" @click="details(item)">
                       <el-row>
                         <el-col :span="5">
                           <img :src="item.img" width="100px" height="100px">
@@ -58,7 +58,7 @@
                     </div>
                   </el-tab-pane>
                   <el-tab-pane label="比赛数据" name="second">
-                    <div class="colorBox" v-for="(item,index) in list2" :key="index">
+                    <div class="colorBox" v-for="(item,index) in list2" :key="index" @click="details(item)" >
                       <el-row>
                         <el-col :span="5">
                           <img :src="item.img" width="100px" height="100px">
@@ -68,7 +68,7 @@
                     </div>
                   </el-tab-pane>
                   <el-tab-pane label="赛事信息" name="third">
-                    <div class="colorBox" v-for="(item,index) in list3" :key="index">
+                    <div class="colorBox" v-for="(item,index) in list3" :key="index" @click="details(item)">
                       <el-row>
                         <el-col :span="5">
                           <img :src="item.img" width="100px" height="100px">
@@ -78,7 +78,7 @@
                     </div>
                   </el-tab-pane>
                   <el-tab-pane label="战术攻略" name="fourth">
-                    <div class="colorBox" v-for="(item,index) in list4" :key="index">
+                    <div class="colorBox" v-for="(item,index) in list4" :key="index" @click="details(item)">
                       <el-row>
                         <el-col :span="5">
                           <img :src="item.img" width="100px" height="100px">
@@ -88,7 +88,7 @@
                     </div>
                   </el-tab-pane>
                   <el-tab-pane label="人物特稿" name="five">
-                    <div class="colorBox" v-for="(item,index) in list5" :key="index">
+                    <div class="colorBox" v-for="(item,index) in list5" :key="index" @click="details(item)">
                       <el-row>
                         <el-col :span="5">
                           <img :src="item.img" width="100px" height="100px">
@@ -103,21 +103,40 @@
           </el-row>
         </el-col>
 
+
+
+        <el-dialog
+          title="详细"
+          :visible.sync="dialogVisible"
+          width="30%"
+          :before-close="handleClose">
+          <h2 style="padding:0 20px">{{detailsdata.author}}</h2>
+          <img style="padding:0 20px;margin:0 auto" :src="detailsdata.img" alt="">
+          <p style="padding:0 20px">{{detailsdata.title}}</p>
+          <span slot="footer" class="dialog-footer">
+            <el-button @click="dialogVisible = false">取 消</el-button>
+            <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+          </span>
+      </el-dialog>
+
+
+
+
         <el-col :span="6" class="niceBox">
-          <div class="colorBox">
+          <div class="colorBox" style="padding:20px">
             <el-row>
-              <el-col class="headerText">直播人气排行榜</el-col>
+              <el-col class="headerText" >直播人气排行榜</el-col>
             </el-row>
             <el-row class="fitText">
               <el-col :span="5">主播</el-col>
               <el-col :span="4" :offset="15">人气</el-col>
             </el-row>
           </div>
-          <el-row v-for="(item,index) in this.dataList" :key="index" class="fitBox">
+          <el-row style="padding:20px" v-for="(item,index) in this.dataList" :key="index" class="fitBox">
             <el-col :span="19">
               <a href="#">{{item.title}}</a>
             </el-col>
-            <el-col :span="4">{{item.num}}</el-col>
+            <el-col :span="4" style="    line-height: 37px;font-size: 12px;">{{item.num}}</el-col>
           </el-row>
         </el-col>
       </el-row>
@@ -130,6 +149,7 @@ import axios from "../api/axios";
 export default {
   data() {
     return {
+      dialogVisible: false,
       activeName: "first",
       list1: [],
       list2: [],
@@ -141,13 +161,18 @@ export default {
           title: "【卡尔】 卡尔最强王者  微服私访",
           num: "1446355"
         }
-      ]
+      ],
+      detailsdata:[]
     };
   },
   created() {
     this.getlist();
   },
   methods: {
+    details(item) {
+      this.dialogVisible = true
+      this.detailsdata = item
+    },
     getlist() {
       axios.post(firstShowFatherSelect).then(data => {
         console.log(data);
@@ -196,11 +221,9 @@ export default {
 
 .fitBox {
   margin-top: 10px;
-  height: 40px;
   background-color: #ffffff;
   display: block;
   font-size: 13px;
-  line-height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
