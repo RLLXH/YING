@@ -60,9 +60,15 @@ export default {
                 this.user.password
             )
             .then(data => {
-              this.$message.success("登陆成功");
+              console.log(data.data)
+              if(data.data!=''){
+                 this.$message.success("登陆成功");
               localStorage.setItem("loading", this.user.userName);
-              window.history.go(0)
+              this.$router.push("/Index/grad");
+              }else{
+                this.$message.warning("请输入正确的用户名和密码");
+              }
+             
             });
         } else {
           this.$message.warning("请输入用户名和密码");
