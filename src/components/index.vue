@@ -16,7 +16,7 @@
 
 <script>
 import leftMenu from "../components/leftMenu.vue";
-import indexTab from "../components/indexTab.vue";
+//import indexTab from "../components/indexTab.vue";
 import fotter from "../components/fotter.vue"
 export default {
   data() {
@@ -24,7 +24,7 @@ export default {
   },
   components: {
     leftMenu,
-    indexTab,
+    //indexTab,
     fotter
   }
 };

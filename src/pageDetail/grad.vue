@@ -3,7 +3,7 @@
     <div class="imgBox" style="margin-top:10px">
       <el-carousel>
       <el-carousel-item>
-        <img src="../assets/99197.jpg">
+        <img src="../assets/105260.png">
       </el-carousel-item>
        <el-carousel-item>
         <img src="../assets/101458.jpg">
@@ -12,7 +12,7 @@
         <img src="../assets/102657.jpg">
       </el-carousel-item>
       <el-carousel-item>
-        <img src="../assets//101458.jpg">
+        <img src="../assets//104500.jpg">
       </el-carousel-item>
        <!-- <el-carousel-item>
         <img src="../assets/lun5.jpg">
@@ -26,19 +26,19 @@
             <el-row style="margin:20px 0">热门赛事</el-row>
             <el-row :gutter ="32">
               <el-col :span="5" >
-                <img width="96%" src="../assets/pit.png" height="90px">
+                <img width="96%" @click="video" src="../assets/pit.png" height="90px">
                 <span class="spanBox">2019 MSI | 季赛冠军</span>
               </el-col>
-              <el-col :span="5">
-                <img width="96%" src="../assets/761_mid.jpg" height="90px">
+              <el-col :span="5" >
+                <img width="96%" @click="video" src="../assets/761_mid.jpg" height="90px">
                 <span class="spanBox">NEST全国电子竞技大赛</span>
               </el-col>
-              <el-col :span="5">
-                <img width="96%" src="../assets/762_mid.jpg" height="90px">
+              <el-col :span="5" >
+                <img width="96%" @click="video" src="../assets/762_mid.jpg" height="90px">
                 <span class="spanBox">2019LCK春季升降级赛</span>
               </el-col>
-              <el-col :span="5">
-                <img width="96%" src="../assets/811_mid.jpg" height="90px">
+              <el-col :span="5" >
+                <img width="96%" @click="video" src="../assets/811_mid.jpg" height="90px">
                 <span class="spanBox">2019 NA LCS Spring、北美职业联赛春季赛</span>
               </el-col>
             </el-row>
@@ -118,17 +118,27 @@
             <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
           </span>
       </el-dialog>
-
+<el-dialog
+          title="视频"
+          :visible.sync="dialogVisibleVideo"
+          width="90%"
+          :before-close="handleClose">
+          <video src=""></video>
+          <span slot="footer" class="dialog-footer">
+            <el-button @click="dialogVisible = false">取 消</el-button>
+            <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+          </span>
+      </el-dialog>
 
 
 
         <el-col :span="6" class="niceBox">
           <div class="colorBox" style="padding:20px">
             <el-row>
-              <el-col class="headerText" >直播人气排行榜</el-col>
+              <el-col class="headerText" >俱乐部信息</el-col>
             </el-row>
             <el-row class="fitText">
-              <el-col :span="5">主播</el-col>
+              <el-col :span="5">俱乐部</el-col>
               <el-col :span="4" :offset="15">人气</el-col>
             </el-row>
           </div>
@@ -150,6 +160,7 @@ export default {
   data() {
     return {
       dialogVisible: false,
+      dialogVisibleVideo:false,
       activeName: "first",
       list1: [],
       list2: [],
@@ -158,9 +169,41 @@ export default {
       list5: [],
       dataList: [
         {
-          title: "【卡尔】 卡尔最强王者  微服私访",
+          title: "【RNG】 2018MSI冠军",
           num: "1446355"
-        }
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
+        {
+          title: "【RNG】 2018MSI冠军",
+          num: "1446355"
+        },
       ],
       detailsdata:[]
     };
@@ -173,8 +216,11 @@ export default {
       this.dialogVisible = true
       this.detailsdata = item
     },
+    video () {
+      this.dialogVisibleVideo = true
+    },
     getlist() {
-      axios.post(firstShowFatherSelect).then(data => {
+      axios.post('/firstShowFather/select').then(data => {
         console.log(data);
         this.list1 = data.data[0].firstShowList;
         this.list2 = data.data[1].firstShowList;

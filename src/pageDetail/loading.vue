@@ -61,10 +61,10 @@ export default {
             )
             .then(data => {
               console.log(data.data)
-              if(data.data!=''){
-                 this.$message.success("登陆成功");
-              localStorage.setItem("loading", this.user.userName);
-              this.$router.push("/Index/grad");
+              if(data.data!=''){ //判断时候登录成功
+                 this.$message.success("登陆成功");//提示登陆成功
+                  localStorage.setItem("loading", this.user.userName);//保存登录用户信息
+                  this.$router.push("/Index/grad");//登陆成功后跳转到首页
               }else{
                 this.$message.warning("请输入正确的用户名和密码");
               }
