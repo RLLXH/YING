@@ -7,3 +7,5 @@ export const userRegister='/user/register'//注册
 export const firstShowFatherSelect='/firstShowFather/select'//查询
 //战事数据
 export const teamdataSelect='/teamdata/select'//查询
+//英雄榜
+export const heroListSelect='/heroList/select'//动态分页查询

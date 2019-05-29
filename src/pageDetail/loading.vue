@@ -71,7 +71,14 @@ export default {
              
             });
         } else {
-          this.$message.warning("请输入用户名和密码");
+          if(this.user.userName==''){
+            this.$message.warning("请输入用户名");
+          }else if(this.user.password==''){
+            this.$message.warning("请输入密码");
+          }else {
+            this.$message.warning("请输入用户名和密码");
+          }
+          
         }
       });
     }

@@ -2,21 +2,16 @@
   <div class="all" style="margin:20px auto">
     <el-form  :inline="true">
       <el-form-item label="赛事:" prop="name">
-        <el-select placeholder="请输入信息" clearable v-model="iii">
-          <el-option
-            v-for="item in seleclist"
-            :key="item.value"
-            :label="item.value"
-            :value="item.value"
-          ></el-option>
+        <el-select  clearable v-model="theQuery.competitionId" @change="getList">
+         <el-option v-for="item in selectlist" :key="item.index" :label="item.name" :value="item.id"></el-option>
         </el-select>
       </el-form-item>
       <el-form-item label="分类:" prop="name">
-        <el-select placeholder="请输入信息" clearable v-model="iii">
+        <el-select  clearable v-model="theQuery.site"  @change="getList">
           <el-option
             v-for="item in seleclist"
-            :key="item.value"
-            :label="item.value"
+            :key="item.label"
+            :label="item.label"
             :value="item.value"
           ></el-option>
         </el-select>
@@ -26,36 +21,36 @@
       <el-table-column label="英雄">
         <template slot-scope="scope">
           <div>
-            <img src="../assets/liulang.png" alt>
-            <span>{{scope.row.name}}</span>
+            <img :src='scope.row.img' alt>
+            <span>{{scope.row.heroName}}</span>
           </div>
         </template>
       </el-table-column>
      <el-table-column label="出场率">
          <template slot-scope="scope">
              <div>
-                <el-progress :percentage='scope.row.num'></el-progress> 
+                <el-progress :percentage='scope.row.attendanceRate'></el-progress> 
              </div>
          </template>
      </el-table-column>
          <el-table-column label="被禁率">
          <template slot-scope="scope">
              <div>
-                <el-progress :percentage='scope.row.num' color="black"></el-progress> 
+                <el-progress :percentage='scope.row.banRate' color="black"></el-progress> 
              </div>
          </template>
      </el-table-column>
          <el-table-column label="胜率">
          <template slot-scope="scope">
              <div>
-                <el-progress :percentage='scope.row.num'></el-progress> 
+                <el-progress :percentage='scope.row.winningProbability'></el-progress> 
              </div>
          </template>
      </el-table-column>
          <el-table-column label="KDA">
          <template slot-scope="scope">
              <div>
-                <el-progress :percentage='scope.row.num'></el-progress> 
+                <el-progress :percentage='scope.row.kda'></el-progress> 
              </div>
          </template>
      </el-table-column>
@@ -63,30 +58,47 @@
   </div>
 </template>
 <script>
+import  {heroListSelect,teamdataSelect} from '../api/address.js'
+import axios from '../api/axios.js'
 export default {
   data() {
     return {
-        iii:'',
-        seleclist:[{
-             value:'2019LDL春季赛'
-        }
-           
+        selectlist:[],
+        seleclist:[
+          {value:'',label:'全部英雄'},
+          {value:'1',label:'ADC'},
+          {value:'2',label:'辅助'},
+          {value:'3',label:'上单'},
+          {value:'4',label:'打野'},
         ],
+        theQuery:{
+          competitionId:1,
+          site:'',
+          pageNum:1,
+          pageSize:20,
+        },
       list: [
-        { name: "木木" ,num:'80'},
-        { name: "亚索" ,num:'59'},
-        { name: "德马" ,num:'84'},
-        { name: "欧皇" ,num:'34'},
-        { name: "路飞" ,num:'75'},
-        { name: "乔巴" ,num:'69'},
-        { name: "娜美" ,num:'86'},
-        { name: "大妈" ,num:'84'},
-        { name: "香克斯" ,num:'82'},
-        { name: "纳鲁托" ,num:'56'},
-        { name: "啥是可" ,num:'67'},
-        { name: "雏田" ,num:'89'},
+        { name: "木木" ,num:80},
+      
         ],
     };
+  },
+  created(){
+    this.getSelect();
+    this.getList();
+  },
+  methods:{
+    getSelect(){
+       axios.post(teamdataSelect).then(data=>{
+       this.selectlist=data.data.competitionSeasons
+      })
+    },
+    getList(){
+      axios.post(heroListSelect+'?pageSize='+this.theQuery.pageNum+'&pageNum='+this.theQuery.pageNum+'&competitionId='+this.theQuery.competitionId+'&site='+this.theQuery.site).then(data=>{
+        console.log(data)
+        this.list=data.data.content;
+      })
+    }
   }
 };
 </script>
