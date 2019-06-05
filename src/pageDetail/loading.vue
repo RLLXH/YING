@@ -36,8 +36,9 @@ export default {
         userName: ""
       },
       rules: {
-        password: [{ required: true, message: " ", trigger: "blur" }],
-        userName: [{ required: true, message: " ", trigger: "blur" }]
+        userName: [{ required: true, message: "", trigger: "blur" }],
+        password: [{ required: true, message: "", trigger: "blur" }],
+       
       }
     };
   },
@@ -62,7 +63,7 @@ export default {
             .then(data => {
               console.log(data.data)
               if(data.data!=''){
-                 this.$message.success("登陆成功");
+                this.$message.success("登陆成功");
               localStorage.setItem("loading", this.user.userName);
               this.$router.push("/Index/grad");
               }else{
