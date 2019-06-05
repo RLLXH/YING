@@ -58,13 +58,16 @@
                     </div>
                   </el-tab-pane>
                   <el-tab-pane label="比赛数据" name="second">
-                    <div class="colorBox" v-for="(item,index) in list2" :key="index" @click="details(item)" >
+                    <!-- <div class="colorBox" v-for="(item,index) in list2" :key="index" @click="details(item)" >
                       <el-row>
                         <el-col :span="5">
                           <img :src="item.img" width="100px" height="100px">
                         </el-col>
                         <el-col :span="19">{{item.title}}</el-col>
                       </el-row>
+                    </div> -->
+                    <div  class="colorBox">
+                      
                     </div>
                   </el-tab-pane>
                   <el-tab-pane label="赛事信息" name="third">
@@ -212,6 +215,7 @@ export default {
     this.getlist();
   },
   methods: {
+    handleClose(){},
     details(item) {
       this.dialogVisible = true
       this.detailsdata = item

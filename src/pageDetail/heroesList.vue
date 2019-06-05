@@ -97,6 +97,13 @@ export default {
       axios.post(heroListSelect+'?pageSize='+this.theQuery.pageNum+'&pageNum='+this.theQuery.pageNum+'&competitionId='+this.theQuery.competitionId+'&site='+this.theQuery.site).then(data=>{
         console.log(data)
         this.list=data.data.content;
+        this.list.map(v=>{
+          for (let val in v){
+            if(val!='img'){
+              v[val] = (v[val]/100).toFixed(2)-0
+            }
+          }
+        })
       })
     }
   }
