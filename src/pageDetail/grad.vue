@@ -66,9 +66,59 @@
                         <el-col :span="19">{{item.title}}</el-col>
                       </el-row>
                     </div> -->
+
+                      <!-- 比赛数据 -->
                     <div  class="colorBox">
-                      
+                      <span class="headerspoan">2019 LPL 夏季赛 LNG vs JDG <span>22小时前</span></span>
+                      <el-row>
+                        <el-col class="left" :span="8">
+                            <el-row>
+                              <el-col :span="4">LNG</el-col>
+                               <el-col :span="20">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                               <el-col>
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                            </el-row>
+                            
+                        </el-col>
+                        <el-col class="bijiaoBox" :span="8">
+                          <img src="../assets/bifen.png" alt="">
+                        </el-col>
+                        <el-col :span="8" class='right'>
+                             <el-row>
+                              
+                               <el-col :span="20">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                                <el-col :span="4">LNG</el-col>
+                               <el-col>
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                               
+                            </el-row>
+                        </el-col>
+                      </el-row>
                     </div>
+
+
                   </el-tab-pane>
                   <el-tab-pane label="赛事信息" name="third">
                     <div class="colorBox" v-for="(item,index) in list3" :key="index" @click="details(item)">
@@ -105,9 +155,6 @@
             </el-col>
           </el-row>
         </el-col>
-
-
-
         <el-dialog
           title="详细"
           :visible.sync="dialogVisible"
@@ -132,10 +179,7 @@
             <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
           </span>
       </el-dialog>
-
-
-
-        <el-col :span="6" class="niceBox">
+    <el-col :span="6" class="niceBox">
           <div class="colorBox" style="padding:20px">
             <el-row>
               <el-col class="headerText" >俱乐部信息</el-col>
@@ -305,5 +349,59 @@ export default {
 .colorBox {
   background: #ffffff;
   margin-top: 20px;
+}
+
+.headerspoan{
+  display: block;
+  width: 100%;
+  font-size: 15px;
+    color: #323232;
+    font-weight: 600;
+    line-height: 20px;
+  text-align: center;
+  span{
+    font-size: 12px;
+    color: #aaa;
+    line-height: 18px;
+    padding-left:4px; 
+  }
+}
+.left{
+     font-size: 17px;
+    color: #414141;
+    font-weight: 600;
+    line-height: 24px;
+  img{
+    width: 17%;
+    float: right;
+    margin-right: 2%;
+  }
+  .el-col{
+    margin-bottom: 5px;
+    height: 100%;
+  }
+}
+.right{
+     font-size: 17px;
+    color: #414141;
+    font-weight: 600;
+    line-height: 24px;
+  img{
+    width: 17%;
+    float: left;
+    margin-right: 2%;
+  }
+  .el-col{
+    margin-bottom: 5px;
+    height: 100%;
+  }
+}
+.bijiaoBox{
+ 
+ img{
+   margin-top: 10px;
+   width: 100%;
+   height: 100%;
+ }
 }
 </style>
