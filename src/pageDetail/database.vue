@@ -150,11 +150,12 @@ export default {
       });
     },
     changeSelect(val) {
+      console.log(val.flag)
       this.list1 = val.attackAndEconomies;
       this.list2 = val.visionAndResources;
       this.list3 = val.kdaDatas;
       this.list4 = val.farmTeamContributions;
-      if (val.flag) {
+      if (!val.flag) {
         this.list1.map((v, k) => {
           console.log(v);
           for (let val in v) {
