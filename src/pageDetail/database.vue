@@ -154,7 +154,7 @@ export default {
       this.list2 = val.visionAndResources;
       this.list3 = val.kdaDatas;
       this.list4 = val.farmTeamContributions;
-      if (this.ttt) {
+      if (val.flag) {
         this.list1.map((v, k) => {
           console.log(v);
           for (let val in v) {
@@ -185,7 +185,7 @@ export default {
           }
         });
       }
-      this.ttt =false
+      val.flag=true;
     }
   }
 };
