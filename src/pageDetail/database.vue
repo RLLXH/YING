@@ -126,6 +126,7 @@ import { teamdataSelect } from "../api/address.js";
 export default {
   data() {
     return {
+      ttt: true,
       event: "",
       activeName: "first",
       list: [],
@@ -149,32 +150,42 @@ export default {
       });
     },
     changeSelect(val) {
-    
       this.list1 = val.attackAndEconomies;
       this.list2 = val.visionAndResources;
       this.list3 = val.kdaDatas;
       this.list4 = val.farmTeamContributions;
-      this.list1.map((v,k) => {
-        console.log(v)
-        for (let val in v) {
-           v[val]  = (v[val] / 100).toFixed(2);
-        }
-      });
-      this.list2.map(v => {
-        for (let val in v) {
-          v[val] = (v[val] / 100).toFixed(2);
-        }
-      });
-      this.list3.map(v => {
-        for (let val in v) {
-          v[val] = (v[val] / 100).toFixed(2);
-        }
-      });
-      this.list4.map(v => {
-        for (let val in v) {
-          v[val] = (v[val] / 100).toFixed(2);
-        }
-      });
+      if (this.ttt) {
+        this.list1.map((v, k) => {
+          console.log(v);
+          for (let val in v) {
+            if (val != "ranking" && val != "combatTeam" && val != "person") {
+              v[val] = (v[val] / 100).toFixed(2);
+            }
+          }
+        });
+        this.list2.map(v => {
+          for (let val in v) {
+            if (val != "ranking" && val != "combatTeam" && val != "person") {
+              v[val] = (v[val] / 100).toFixed(2);
+            }
+          }
+        });
+        this.list3.map(v => {
+          for (let val in v) {
+            if (val != "ranking" && val != "combatTeam" && val != "person") {
+              v[val] = (v[val] / 100).toFixed(2);
+            }
+          }
+        });
+        this.list4.map(v => {
+          for (let val in v) {
+            if (val != "ranking" && val != "combatTeam" && val != "person") {
+              v[val] = (v[val] / 100).toFixed(2);
+            }
+          }
+        });
+      }
+      this.ttt =false
     }
   }
 };
