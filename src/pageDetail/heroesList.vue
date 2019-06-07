@@ -99,7 +99,7 @@ export default {
         this.list=data.data.content;
         this.list.map(v=>{
           for (let val in v){
-            if(val!='img'){
+            if(val!='img' || val !='heroName'){
               v[val] = (v[val]/100).toFixed(2)-0
             }
           }
