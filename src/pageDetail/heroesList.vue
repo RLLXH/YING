@@ -94,12 +94,12 @@ export default {
       })
     },
     getList(){
-      axios.post(heroListSelect+'?pageSize='+this.theQuery.pageNum+'&pageNum='+this.theQuery.pageNum+'&competitionId='+this.theQuery.competitionId+'&site='+this.theQuery.site).then(data=>{
+      axios.post(heroListSelect+'?pageSize='+this.theQuery.pageSize+'&pageNum='+this.theQuery.pageNum+'&competitionId='+this.theQuery.competitionId+'&site='+this.theQuery.site).then(data=>{
         console.log(data)
         this.list=data.data.content;
         this.list.map(v=>{
           for (let val in v){
-            if(val!='img' || val !='heroName'){
+            if(val!='img' && val!='heroName'){
               v[val] = (v[val]/100).toFixed(2)-0
             }
           }
