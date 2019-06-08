@@ -378,7 +378,7 @@
           width="90%"
          >
          <video data-v-fb8cd72c="" width="100%" height="211" controls="controls" style="height:600px"><source data-v-fb8cd72c="" src="http://vodkgeyttp8.vod.126.net/cloudmusic/8b19/core/8174/71f820db72d0921d136fc5951346cf91.mp4?wsSecret=cc10eba841137775140b425b228c5cfd&wsTime=1560007092" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>
-          <span slot="footer" class="dialog-footer">vod
+          <span slot="footer" class="dialog-footer">
           </span>
       </el-dialog>
     <el-col :span="7" class="niceBox">
