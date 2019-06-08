@@ -76,17 +76,17 @@
                               <el-col :span="4">LNG</el-col>
                                <el-col :span="20">
                                  <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/ala.png" alt="">
+                                 <img src="../assets/Akali.png" alt="">
+                                 <img src="../assets/Galio.png" alt="">
+                                 <img src="../assets/Leblanc.png" alt="">
                                </el-col>
                                <el-col>
-                                <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
+                                <img src="../assets/Leblanc.png" alt="">
+                                 <img src="../assets/Alistar.png" alt="">
+                                 <img src="../assets/JarvanIV.png" alt="">
+                                 <img src="../assets/Sylas.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
                                </el-col>
                             </el-row>
                             
@@ -98,19 +98,19 @@
                              <el-row>
                               
                                <el-col :span="20">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/TahmKench.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
+                                 <img src="../assets/Sona.png" alt="">
+                                 <img src="../assets/Yuumi.png" alt="">
+                                 <img src="../assets/XinZhao.png" alt="">
                                </el-col>
                                 <el-col :span="4">LNG</el-col>
                                <el-col>
-                                <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/liulang.png" alt="">
+                                <img src="../assets/Vladimir.png" alt="">
+                                 <img src="../assets/Varus.png" alt="">
+                                 <img src="../assets/Olaf (1).png" alt="">
+                                 <img src="../assets/Fiora.png" alt="">
+                                 <img src="../assets/Neeko.png" alt="">
                                </el-col>
                                
                             </el-row>
@@ -118,7 +118,215 @@
                       </el-row>
                     </div>
 
-
+                          <div  class="colorBox">
+                      <span class="headerspoan">2019 LCK 夏季赛 DWG vs GRF <span>24小时前</span></span>
+                      <el-row>
+                        <el-col class="left" :span="8">
+                            <el-row>
+                              <el-col :span="4">DWG</el-col>
+                               <el-col :span="20">
+                                 <img src="../assets/Galio.png" alt="">
+                                 <img src="../assets/Leblanc.png" alt="">
+                                  <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/ala.png" alt="">
+                                 <img src="../assets/Akali.png" alt="">
+                               </el-col>
+                               <el-col>
+                                <img src="../assets/Leblanc.png" alt="">
+                                 <img src="../assets/Alistar.png" alt="">
+                             
+                                 <img src="../assets/Taliyah.png" alt="">
+                                     <img src="../assets/JarvanIV.png" alt="">
+                                 <img src="../assets/Sylas.png" alt="">
+                               </el-col>
+                            </el-row>
+                            
+                        </el-col>
+                        <el-col class="bijiaoBox" :span="8">
+                          <img src="../assets/bifen.png" alt="">
+                        </el-col>
+                        <el-col :span="8" class='right'>
+                             <el-row>
+                              
+                               <el-col :span="20">
+                              
+                                 <img src="../assets/Yuumi.png" alt="">
+                                 <img src="../assets/XinZhao.png" alt="">
+                                    <img src="../assets/TahmKench.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
+                                 <img src="../assets/Sona.png" alt="">
+                               </el-col>
+                                <el-col :span="4">GRF</el-col>
+                               <el-col>
+                              
+                                 <img src="../assets/Fiora.png" alt="">
+                                 <img src="../assets/Neeko.png" alt="">
+                                   <img src="../assets/Vladimir.png" alt="">
+                                 <img src="../assets/Varus.png" alt="">
+                                 <img src="../assets/Olaf (1).png" alt="">
+                               </el-col>
+                               
+                            </el-row>
+                        </el-col>
+                      </el-row>
+                    </div>    <div  class="colorBox">
+                      <span class="headerspoan">2019 LPL 夏季赛 RW vs RNG <span>48小时前</span></span>
+                      <el-row>
+                        <el-col class="left" :span="8">
+                            <el-row>
+                              <el-col :span="4">RW</el-col>
+                               <el-col :span="20">
+                                 <img src="../assets/liulang.png" alt="">
+                                     <img src="../assets/Akali.png" alt="">
+                                 <img src="../assets/Galio.png" alt="">
+                                 <img src="../assets/ala.png" alt="">
+                             
+                                 <img src="../assets/Leblanc.png" alt="">
+                               </el-col>
+                               <el-col>
+                                <img src="../assets/Leblanc.png" alt="">
+                              
+                                 <img src="../assets/JarvanIV.png" alt="">
+                                 <img src="../assets/Sylas.png" alt="">
+                                    <img src="../assets/Alistar.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
+                               </el-col>
+                            </el-row>
+                            
+                        </el-col>
+                        <el-col class="bijiaoBox" :span="8">
+                          <img src="../assets/bifen.png" alt="">
+                        </el-col>
+                        <el-col :span="8" class='right'>
+                             <el-row>
+                              
+                               <el-col :span="20">
+                               
+                                 <img src="../assets/Yuumi.png" alt="">
+                                   <img src="../assets/TahmKench.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
+                                 <img src="../assets/Sona.png" alt="">
+                                 <img src="../assets/XinZhao.png" alt="">
+                               </el-col>
+                                <el-col :span="4">LNG</el-col>
+                               <el-col>
+                                <img src="../assets/Vladimir.png" alt="">
+                                 <img src="../assets/Varus.png" alt="">
+                               
+                                 <img src="../assets/Fiora.png" alt="">
+                                   <img src="../assets/Olaf (1).png" alt="">
+                                 <img src="../assets/Neeko.png" alt="">
+                               </el-col>
+                               
+                            </el-row>
+                        </el-col>
+                      </el-row>
+                    </div>    <div  class="colorBox">
+                      <span class="headerspoan">2019 LPL 夏季赛 LNG vs JDG <span>48小时前</span></span>
+                      <el-row>
+                        <el-col class="left" :span="8">
+                            <el-row>
+                              <el-col :span="4">RNG</el-col>
+                               <el-col :span="20">
+                                   <img src="../assets/ala.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               <img src="../assets/Leblanc.png" alt="">
+                                 <img src="../assets/Akali.png" alt="">
+                                 <img src="../assets/Galio.png" alt="">
+                                 
+                               </el-col>
+                               <el-col>
+                                 <img src="../assets/Taliyah.png" alt="">
+                                <img src="../assets/Leblanc.png" alt="">
+                              
+                                 <img src="../assets/Sylas.png" alt="">
+                                 
+                                    <img src="../assets/Alistar.png" alt="">
+                                 <img src="../assets/JarvanIV.png" alt="">
+                               </el-col>
+                            </el-row>
+                            
+                        </el-col>
+                        <el-col class="bijiaoBox" :span="8">
+                          <img src="../assets/bifen.png" alt="">
+                        </el-col>
+                        <el-col :span="8" class='right'>
+                             <el-row>
+                              
+                               <el-col :span="20">
+                              
+                                 <img src="../assets/Sona.png" alt="">
+                                 <img src="../assets/Yuumi.png" alt="">
+                                 <img src="../assets/XinZhao.png" alt="">
+                                    <img src="../assets/TahmKench.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
+                               </el-col>
+                                <el-col :span="4">LNG</el-col>
+                               <el-col>
+                              
+                                 <img src="../assets/Varus.png" alt="">
+                                 <img src="../assets/Olaf (1).png" alt="">
+                                 <img src="../assets/Fiora.png" alt="">
+                                 <img src="../assets/Neeko.png" alt="">
+                                   <img src="../assets/Vladimir.png" alt="">
+                               </el-col>
+                               
+                            </el-row>
+                        </el-col>
+                      </el-row>
+                    </div>    <div  class="colorBox">
+                      <span class="headerspoan">2019 LPL 夏季赛 VG vs TES <span>48小时前</span></span>
+                      <el-row>
+                        <el-col class="left" :span="8">
+                            <el-row>
+                              <el-col :span="4">VG</el-col>
+                               <el-col :span="20">
+                                
+                                 <img src="../assets/ala.png" alt="">
+                                 <img src="../assets/Akali.png" alt="">
+                                 <img src="../assets/Galio.png" alt="">
+                                 <img src="../assets/Leblanc.png" alt="">
+                                  <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                               <el-col>
+                              
+                                 <img src="../assets/Sylas.png" alt="">
+                                   <img src="../assets/Leblanc.png" alt="">
+                                 <img src="../assets/Alistar.png" alt="">
+                                 <img src="../assets/JarvanIV.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
+                               </el-col>
+                            </el-row>
+                            
+                        </el-col>
+                        <el-col class="bijiaoBox" :span="8">
+                          <img src="../assets/bifen.png" alt="">
+                        </el-col>
+                        <el-col :span="8" class='right'>
+                             <el-row>
+                              
+                               <el-col :span="20">
+                              
+                                 <img src="../assets/Yuumi.png" alt="">
+                                    <img src="../assets/TahmKench.png" alt="">
+                                 <img src="../assets/Taliyah.png" alt="">
+                                 <img src="../assets/Sona.png" alt="">
+                                 <img src="../assets/XinZhao.png" alt="">
+                               </el-col>
+                                <el-col :span="4">TES</el-col>
+                               <el-col>
+                               
+                                 <img src="../assets/Olaf (1).png" alt="">
+                                 <img src="../assets/Fiora.png" alt="">
+                                  <img src="../assets/Vladimir.png" alt="">
+                                 <img src="../assets/Varus.png" alt="">
+                                 <img src="../assets/Neeko.png" alt="">
+                               </el-col>
+                               
+                            </el-row>
+                        </el-col>
+                      </el-row>
+                    </div>
                   </el-tab-pane>
                   <el-tab-pane label="赛事信息" name="third">
                     <div class="colorBox" v-for="(item,index) in list3" :key="index" @click="details(item)">
