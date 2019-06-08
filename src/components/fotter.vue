@@ -8,7 +8,7 @@
               <li class="first">玩家电竞</li>
               <li>玩家电竞</li>
               <li>玩家电竞</li>
-              <li>英雄联盟</li>
+              <li>玩加电竞</li>
               <li>玩家电竞</li>
 
             </ul>
@@ -70,12 +70,12 @@
             </a>
           </li>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="https://www.wegame.com.cn/?adtag=cop.innercop.tgp.redirect">
               <img src="../assets/lol.png" height="30px;">
             </a>
           </li>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="https://www.riotgames.com/en">
               <img src="../assets/quantou.png" height="30px;">
             </a>
           </li>
@@ -83,27 +83,27 @@
         <ul>
           <div>合作战队</div>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="https://weibo.com/teamwe?sudaref=www.baidu.com&retcode=6102&is_hot=1">
               <img src="../assets/we.png" height="30px;">
             </a>
           </li>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="https://weibo.com/u/5926660141?is_hot=1">
               <img src="../assets/imay.png" height="30px;">
             </a>
           </li>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="http://www.edgteam.cn/">
               <img src="../assets/lgd.png" height="30px;">
             </a>
           </li>
            <li>
-            <a href="https://games.qq.com/">
+            <a href="http://www.edgteam.cn/">
               <img src="../assets/edg.png" height="30px;">
             </a>
           </li>
            <li>
-            <a href="https://games.qq.com/">
+            <a href="https://weibo.com/u/5926660141?is_hot=1">
               <img src="../assets/qg.png" height="30px;">
             </a>
           </li>
@@ -111,17 +111,17 @@
         <ul>
           <div>合作直播平台</div>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="https://www.huya.com/">
               <img src="../assets/huya.png" height="30px;">
             </a>
           </li>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="https://www.douyu.com/">
               <img src="../assets/douyu.png" height="30px;">
             </a>
           </li>
           <li>
-            <a href="https://games.qq.com/">
+            <a href="https://www.douyu.com/">
               <img src="../assets/zhanqi.png" height="30px;">
             </a>
           </li>

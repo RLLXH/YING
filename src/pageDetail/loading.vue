@@ -49,6 +49,7 @@ export default {
     handleClick() {
       (this.user.password = ""), (this.user.userName = "");
     },
+    //登录
     loadBtn(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
@@ -64,7 +65,7 @@ export default {
               console.log(data.data)
               if(data.data!=''){
                 this.$message.success("登陆成功");
-              localStorage.setItem("loading", this.user.userName);
+              localStorage.setItem("loading", this.user.userName);          
               this.$router.push("/Index/grad");
               }else{
                 this.$message.warning("请输入正确的用户名和密码");

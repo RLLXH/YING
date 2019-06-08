@@ -72,7 +72,7 @@ export default {
           {value:'4',label:'打野'},
         ],
         theQuery:{
-          competitionId:1,
+          competitionId:2,
           site:'',
           pageNum:1,
           pageSize:20,

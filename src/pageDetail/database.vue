@@ -121,8 +121,8 @@
   </div>
 </template>
 <script>
-import axios from "../api/axios.js";
-import { teamdataSelect } from "../api/address.js";
+import axios from "../api/axios.js";//引入axios
+import { teamdataSelect } from "../api/address.js";//引入接口地址常量
 export default {
   data() {
     return {
@@ -134,7 +134,7 @@ export default {
       list2: [],
       list3: [],
       list4: [],
-      flag: "1"
+      flag: "1" //战队数据为1，选手数据为2
     };
   },
   created() {
@@ -143,14 +143,16 @@ export default {
   methods: {
     ff(val) {
       this.flag = val;
-    },
+    }, //改变flag值
     getList() {
       axios.post(teamdataSelect).then(data => {
-        this.list = data.data.competitionSeasons;
+        this.list = data.data.competitionSeasons;//返回data里的data的这个
       });
     },
+
     changeSelect(val) {
       console.log(val.flag)
+      //val接收选择之后的value值
       this.list1 = val.attackAndEconomies;
       this.list2 = val.visionAndResources;
       this.list3 = val.kdaDatas;

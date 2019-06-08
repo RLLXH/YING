@@ -18,10 +18,26 @@
         <img src="../assets/lun5.jpg">
       </el-carousel-item> -->
     </el-carousel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <div class="mainBox">
       <el-row>
-        <el-col :span="17">
+        <el-col :span="16">
           <div class="colorBox" style="padding:20px">
             <el-row style="margin:20px 0">热门赛事</el-row>
             <el-row :gutter ="32">
@@ -76,17 +92,17 @@
                               <el-col :span="4">LNG</el-col>
                                <el-col :span="20">
                                  <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/ala.png" alt="">
-                                 <img src="../assets/Akali.png" alt="">
-                                 <img src="../assets/Galio.png" alt="">
-                                 <img src="../assets/Leblanc.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                                <el-col>
-                                <img src="../assets/Leblanc.png" alt="">
-                                 <img src="../assets/Alistar.png" alt="">
-                                 <img src="../assets/JarvanIV.png" alt="">
-                                 <img src="../assets/Sylas.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                             </el-row>
                             
@@ -98,19 +114,19 @@
                              <el-row>
                               
                                <el-col :span="20">
-                                 <img src="../assets/TahmKench.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
-                                 <img src="../assets/Sona.png" alt="">
-                                 <img src="../assets/Yuumi.png" alt="">
-                                 <img src="../assets/XinZhao.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                                 <el-col :span="4">LNG</el-col>
                                <el-col>
-                                <img src="../assets/Vladimir.png" alt="">
-                                 <img src="../assets/Varus.png" alt="">
-                                 <img src="../assets/Olaf (1).png" alt="">
-                                 <img src="../assets/Fiora.png" alt="">
-                                 <img src="../assets/Neeko.png" alt="">
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                                
                             </el-row>
@@ -118,78 +134,25 @@
                       </el-row>
                     </div>
 
-                          <div  class="colorBox">
-                      <span class="headerspoan">2019 LCK 夏季赛 DWG vs GRF <span>24小时前</span></span>
+                     <div  class="colorBox">
+                      <span class="headerspoan">2019 LPL 夏季赛 YOO vs GON <span>22小时前</span></span>
                       <el-row>
                         <el-col class="left" :span="8">
                             <el-row>
-                              <el-col :span="4">DWG</el-col>
-                               <el-col :span="20">
-                                 <img src="../assets/Galio.png" alt="">
-                                 <img src="../assets/Leblanc.png" alt="">
-                                  <img src="../assets/liulang.png" alt="">
-                                 <img src="../assets/ala.png" alt="">
-                                 <img src="../assets/Akali.png" alt="">
-                               </el-col>
-                               <el-col>
-                                <img src="../assets/Leblanc.png" alt="">
-                                 <img src="../assets/Alistar.png" alt="">
-                             
-                                 <img src="../assets/Taliyah.png" alt="">
-                                     <img src="../assets/JarvanIV.png" alt="">
-                                 <img src="../assets/Sylas.png" alt="">
-                               </el-col>
-                            </el-row>
-                            
-                        </el-col>
-                        <el-col class="bijiaoBox" :span="8">
-                          <img src="../assets/bifen.png" alt="">
-                        </el-col>
-                        <el-col :span="8" class='right'>
-                             <el-row>
-                              
-                               <el-col :span="20">
-                              
-                                 <img src="../assets/Yuumi.png" alt="">
-                                 <img src="../assets/XinZhao.png" alt="">
-                                    <img src="../assets/TahmKench.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
-                                 <img src="../assets/Sona.png" alt="">
-                               </el-col>
-                                <el-col :span="4">GRF</el-col>
-                               <el-col>
-                              
-                                 <img src="../assets/Fiora.png" alt="">
-                                 <img src="../assets/Neeko.png" alt="">
-                                   <img src="../assets/Vladimir.png" alt="">
-                                 <img src="../assets/Varus.png" alt="">
-                                 <img src="../assets/Olaf (1).png" alt="">
-                               </el-col>
-                               
-                            </el-row>
-                        </el-col>
-                      </el-row>
-                    </div>    <div  class="colorBox">
-                      <span class="headerspoan">2019 LPL 夏季赛 RW vs RNG <span>48小时前</span></span>
-                      <el-row>
-                        <el-col class="left" :span="8">
-                            <el-row>
-                              <el-col :span="4">RW</el-col>
+                              <el-col :span="4">YOO</el-col>
                                <el-col :span="20">
                                  <img src="../assets/liulang.png" alt="">
-                                     <img src="../assets/Akali.png" alt="">
-                                 <img src="../assets/Galio.png" alt="">
-                                 <img src="../assets/ala.png" alt="">
-                             
-                                 <img src="../assets/Leblanc.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                                <el-col>
-                                <img src="../assets/Leblanc.png" alt="">
-                              
-                                 <img src="../assets/JarvanIV.png" alt="">
-                                 <img src="../assets/Sylas.png" alt="">
-                                    <img src="../assets/Alistar.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                             </el-row>
                             
@@ -201,48 +164,93 @@
                              <el-row>
                               
                                <el-col :span="20">
-                               
-                                 <img src="../assets/Yuumi.png" alt="">
-                                   <img src="../assets/TahmKench.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
-                                 <img src="../assets/Sona.png" alt="">
-                                 <img src="../assets/XinZhao.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
-                                <el-col :span="4">LNG</el-col>
+                                <el-col :span="4">GON</el-col>
                                <el-col>
-                                <img src="../assets/Vladimir.png" alt="">
-                                 <img src="../assets/Varus.png" alt="">
-                               
-                                 <img src="../assets/Fiora.png" alt="">
-                                   <img src="../assets/Olaf (1).png" alt="">
-                                 <img src="../assets/Neeko.png" alt="">
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                                
                             </el-row>
                         </el-col>
                       </el-row>
-                    </div>    <div  class="colorBox">
-                      <span class="headerspoan">2019 LPL 夏季赛 LNG vs JDG <span>48小时前</span></span>
+                    </div>
+                     <div  class="colorBox">
+                      <span class="headerspoan">2019 LPL 夏季赛 FEN vs IG <span>22小时前</span></span>
+                      <el-row>
+                        <el-col class="left" :span="8">
+                            <el-row>
+                              <el-col :span="4">FEN</el-col>
+                               <el-col :span="20">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                               <el-col>
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                            </el-row>
+                            
+                        </el-col>
+                        <el-col class="bijiaoBox" :span="8">
+                          <img src="../assets/bifen.png" alt="">
+                        </el-col>
+                        <el-col :span="8" class='right'>
+                             <el-row>
+                              
+                               <el-col :span="20">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                                <el-col :span="4">IG</el-col>
+                               <el-col>
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                               </el-col>
+                               
+                            </el-row>
+                        </el-col>
+                      </el-row>
+                    </div>
+                     <div  class="colorBox">
+                      <span class="headerspoan">2019 LPL 夏季赛 RNG vs Mumu <span>22小时前</span></span>
                       <el-row>
                         <el-col class="left" :span="8">
                             <el-row>
                               <el-col :span="4">RNG</el-col>
                                <el-col :span="20">
-                                   <img src="../assets/ala.png" alt="">
                                  <img src="../assets/liulang.png" alt="">
-                               <img src="../assets/Leblanc.png" alt="">
-                                 <img src="../assets/Akali.png" alt="">
-                                 <img src="../assets/Galio.png" alt="">
-                                 
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                                <el-col>
-                                 <img src="../assets/Taliyah.png" alt="">
-                                <img src="../assets/Leblanc.png" alt="">
-                              
-                                 <img src="../assets/Sylas.png" alt="">
-                                 
-                                    <img src="../assets/Alistar.png" alt="">
-                                 <img src="../assets/JarvanIV.png" alt="">
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                             </el-row>
                             
@@ -254,73 +262,19 @@
                              <el-row>
                               
                                <el-col :span="20">
-                              
-                                 <img src="../assets/Sona.png" alt="">
-                                 <img src="../assets/Yuumi.png" alt="">
-                                 <img src="../assets/XinZhao.png" alt="">
-                                    <img src="../assets/TahmKench.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
-                                <el-col :span="4">LNG</el-col>
+                                <el-col :span="4">Mumu</el-col>
                                <el-col>
-                              
-                                 <img src="../assets/Varus.png" alt="">
-                                 <img src="../assets/Olaf (1).png" alt="">
-                                 <img src="../assets/Fiora.png" alt="">
-                                 <img src="../assets/Neeko.png" alt="">
-                                   <img src="../assets/Vladimir.png" alt="">
-                               </el-col>
-                               
-                            </el-row>
-                        </el-col>
-                      </el-row>
-                    </div>    <div  class="colorBox">
-                      <span class="headerspoan">2019 LPL 夏季赛 VG vs TES <span>48小时前</span></span>
-                      <el-row>
-                        <el-col class="left" :span="8">
-                            <el-row>
-                              <el-col :span="4">VG</el-col>
-                               <el-col :span="20">
-                                
-                                 <img src="../assets/ala.png" alt="">
-                                 <img src="../assets/Akali.png" alt="">
-                                 <img src="../assets/Galio.png" alt="">
-                                 <img src="../assets/Leblanc.png" alt="">
-                                  <img src="../assets/liulang.png" alt="">
-                               </el-col>
-                               <el-col>
-                              
-                                 <img src="../assets/Sylas.png" alt="">
-                                   <img src="../assets/Leblanc.png" alt="">
-                                 <img src="../assets/Alistar.png" alt="">
-                                 <img src="../assets/JarvanIV.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
-                               </el-col>
-                            </el-row>
-                            
-                        </el-col>
-                        <el-col class="bijiaoBox" :span="8">
-                          <img src="../assets/bifen.png" alt="">
-                        </el-col>
-                        <el-col :span="8" class='right'>
-                             <el-row>
-                              
-                               <el-col :span="20">
-                              
-                                 <img src="../assets/Yuumi.png" alt="">
-                                    <img src="../assets/TahmKench.png" alt="">
-                                 <img src="../assets/Taliyah.png" alt="">
-                                 <img src="../assets/Sona.png" alt="">
-                                 <img src="../assets/XinZhao.png" alt="">
-                               </el-col>
-                                <el-col :span="4">TES</el-col>
-                               <el-col>
-                               
-                                 <img src="../assets/Olaf (1).png" alt="">
-                                 <img src="../assets/Fiora.png" alt="">
-                                  <img src="../assets/Vladimir.png" alt="">
-                                 <img src="../assets/Varus.png" alt="">
-                                 <img src="../assets/Neeko.png" alt="">
+                                <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
+                                 <img src="../assets/liulang.png" alt="">
                                </el-col>
                                
                             </el-row>
@@ -363,31 +317,71 @@
             </el-col>
           </el-row>
         </el-col>
+               <el-dialog
+          title="俱乐部详细"
+          :visible.sync="dialogVisibleClub"
+          width="70%"
+          >
+          <div>
+            <el-row>
+                <el-col :span="7">
+                  <h2>荣耀</h2>
+                  <h3 v-for="(item,index) in clubdata.data.honer" :key="index">{{item}}</h3>
+                </el-col>
+                <el-col :span="17">
+                  <h2>俱乐部成员</h2>
+                  <el-table
+                    :data="clubdata.data.table"
+                    style="width: 100%">
+                    <el-table-column
+                      prop="ID"
+                      label="游戏ID"
+                      width="180">
+                    </el-table-column>
+                    <el-table-column
+                      prop="name"
+                      label="姓名"
+                      width="180">
+                    </el-table-column>
+                    <el-table-column
+                      prop="address"
+                      label="游戏位置">
+                    </el-table-column>
+                    <el-table-column
+                      prop="way"
+                      label="上次动向">
+                    </el-table-column>
+                  </el-table>
+                </el-col>
+              </el-row>
+          </div>
+          <!-- <span slot="footer" class="dialog-footer">
+            <el-button @click="dialogVisible = false">取 消</el-button>
+            <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+          </!--> 
+      </el-dialog>
         <el-dialog
           title="详细"
           :visible.sync="dialogVisible"
           width="30%"
-          :before-close="handleClose">
+          >
           <h2 style="padding:0 20px">{{detailsdata.author}}</h2>
           <img style="padding:0 20px;margin:0 auto" :src="detailsdata.img" alt="">
           <p style="padding:0 20px">{{detailsdata.title}}</p>
           <span slot="footer" class="dialog-footer">
-            <el-button @click="dialogVisible = false">取 消</el-button>
-            <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+
           </span>
       </el-dialog>
-<el-dialog
+      <el-dialog
           title="视频"
           :visible.sync="dialogVisibleVideo"
           width="90%"
-          :before-close="handleClose">
-          <video src=""></video>
-          <span slot="footer" class="dialog-footer">
-            <el-button @click="dialogVisible = false">取 消</el-button>
-            <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+         >
+         <video data-v-fb8cd72c="" width="100%" height="211" controls="controls" style="height:600px"><source data-v-fb8cd72c="" src="http://vodkgeyttp8.vod.126.net/cloudmusic/8b19/core/8174/71f820db72d0921d136fc5951346cf91.mp4?wsSecret=cc10eba841137775140b425b228c5cfd&wsTime=1560007092" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>
+          <span slot="footer" class="dialog-footer">vod
           </span>
       </el-dialog>
-    <el-col :span="6" class="niceBox">
+    <el-col :span="7" class="niceBox">
           <div class="colorBox" style="padding:20px">
             <el-row>
               <el-col class="headerText" >俱乐部信息</el-col>
@@ -397,12 +391,15 @@
               <el-col :span="4" :offset="15">人气</el-col>
             </el-row>
           </div>
-          <el-row style="padding:20px" v-for="(item,index) in this.dataList" :key="index" class="fitBox">
+          <div  v-for="(item,index) in this.dataList" :key="index" class="fitBox" @click="club(item)">
+            <el-row style="padding:20px">
             <el-col :span="19">
-              <a href="#">{{item.title}}</a>
+              <span>{{item.title}}</span>
             </el-col>
             <el-col :span="4" style="    line-height: 37px;font-size: 12px;">{{item.num}}</el-col>
           </el-row>
+          </div>
+          
         </el-col>
       </el-row>
     </div>
@@ -412,10 +409,20 @@
 import { firstShowFatherSelect } from "../api/address.js";
 import axios from "../api/axios";
 export default {
+  mountend (){
+    
+  },
   data() {
     return {
+      clubdata:{
+        data:{
+          honer:[],
+          table:{}
+        }
+      },
       dialogVisible: false,
       dialogVisibleVideo:false,
+      dialogVisibleClub:false,
       activeName: "first",
       list1: [],
       list2: [],
@@ -424,40 +431,156 @@ export default {
       list5: [],
       dataList: [
         {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
+          title: "皇族电子竞技俱乐部",num: "124234234",
+          data:{
+            honer:[
+              '2013年英雄联盟全球总决赛亚军', 
+              '2014年英雄联盟全球总决赛亚军', 
+              '2017年德玛西亚杯长沙站冠军', 
+              '2018年LPL春季赛冠军', 
+              '2018年MSI季中邀请赛冠军',
+            ],
+            table:[
+              {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+                {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+            ]
+          }
         },
         {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
+          title: "皇族电子竞技俱乐部",num: "124234234",
+          data:{
+            honer:[
+              '2013年英雄联盟全球总决赛亚军', 
+              '2014年英雄联盟全球总决赛亚军', 
+              '2017年德玛西亚杯长沙站冠军', 
+              '2018年LPL春季赛冠军', 
+              '2018年MSI季中邀请赛冠军'
+            ],
+            table:[
+              {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+                {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+            ]
+          }
         },
         {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
+          title: "皇族电子竞技俱乐部",num: "124234234",
+          data:{
+            honer:[
+              '2013年英雄联盟全球总决赛亚军', 
+              '2014年英雄联盟全球总决赛亚军', 
+              '2017年德玛西亚杯长沙站冠军', 
+              '2018年LPL春季赛冠军', 
+              '2018年MSI季中邀请赛冠军'
+            ],
+            table:[
+              {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+                {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+            ]
+          }
         },
         {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
-        },
-        {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
-        },
-        {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
-        },
-        {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
-        },
-        {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
-        },
-        {
-          title: "【RNG】 2018MSI冠军",
-          num: "1446355"
+          title: "皇族电子竞技俱乐部",num: "124234234",
+          data:{
+            honer:[
+              '2013年英雄联盟全球总决赛亚军', 
+              '2014年英雄联盟全球总决赛亚军', 
+              '2017年德玛西亚杯长沙站冠军', 
+              '2018年LPL春季赛冠军', 
+              '2018年MSI季中邀请赛冠军'
+            ],
+            table:[
+              {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+                {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+               {
+                ID: 'AmazingJ',
+                name: '石伟豪',
+                address: '上单',
+                way:'BLG战队'
+              },
+            ]
+          }
         },
       ],
       detailsdata:[]
@@ -474,6 +597,10 @@ export default {
     },
     video () {
       this.dialogVisibleVideo = true
+    },
+    club (item) {
+      this.dialogVisibleClub = true
+      this.clubdata = item
     },
     getlist() {
       axios.post('/firstShowFather/select').then(data => {

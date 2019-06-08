@@ -51,13 +51,9 @@ export default {
     justify-content: space-around;
     .el-menu-item{
     width: 100%;
-    // align-content:space-around;
+
     }
-    //  .el-menu{
-    //      background-color: seagreen;
-    //      .el-menu-item-group .el-submenu .el-menu{
-    //           background-color: seagreen!important;
-    //      }
+
   }
 }
 #app .el-menu-item.is-active {
